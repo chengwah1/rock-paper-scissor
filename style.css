@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+}
+
+header{
+    background-color: white;   
+}
+header>h1 {
+    color: #25272E;
+    text-align: center;
+    padding: 1rem;
+}
+body {
+    background-color: #25272E;
+
+}
+
+.score-board {
+    color: white;
+    margin: 0.5rem 10%;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    width: 7rem;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.badge {
+    background-color: #e25840;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+}
+
+#user-label {
+    position: absolute;
+    top: 25%;
+    left: -25px;
+
+}
+#comp-label {
+    position: absolute;
+    top: 25%;
+    right: -30px;
+}
+
+.text-result {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+img {
+    margin: 2rem 0;
+    max-width:5rem;
+    border-color: white;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+img:hover {
+    background-color: rgb(24, 25, 29);
+}
+.user-option {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content {
+    flex-grow: 100px;
+    flex-basis: 300px;
+}
+.small-text {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.score_result_board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result_image {
+    border-style: dashed;
+    width: 3rem;
+    border-width: 0.1rem;
+    cursor: default;
+}
+
+@media screen and (min-width: 700px) {
+   
+    .score-board {
+        transform: scale(1.5);
+    }
+    .text-result {
+        font-size: 3rem;
+    }
+    .small-text{
+        font-size: 1rem;
+    }
+    img {
+        max-width:7rem;
+        border-width: 0.3rem;
+    }
+    .result_image {
+        border-style: dashed;
+        width: 4rem;
+        border-width: 0.1rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    
+    .score-board {
+        /* transform: scale(2); */
+    }
+    
+    
+    .text-result {
+        font-size: 4rem;
+    }
+    .small-text{
+        font-size: 2rem;
+    }
+    img {
+        max-width:10rem;
+        border-width: 0.4rem;
+    }
+    .result_image {
+        border-style: dashed;
+        border-width: 0.2rem;
+        width: 7rem;
+        margin: 0 1rem;
+    }
+    header {
+        font-size: 1rem;
+    }
+    
+}

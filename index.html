@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <header>
+                <h1>Rock Paper Scissors</h1>
+            </header>
+        </div>
+        <div class="score_result_board">
+            <div class="match">
+                <img src="./img/noun_Paper_88662.png" alt="" class="result_image" id = "userResult">
+            </div>
+            <div class="score-board">
+                <div id="user-label" class="badge">User</div>
+                <div id="comp-label" class="badge">Comp</div>
+                <span id="user-score">0</span>:<span id="comp-score">0</span>
+            </div>
+            <div class="match">
+                <img src="./img/noun_Paper_88662.png" alt="" class="result_image" id = "compResult">
+            </div>   
+        </div>
+        
+        <div class="content">
+            <div class="text-result">
+                Paper covers rock. You win!
+            </div>
+            <div class="user-option">
+                <div class="choices">
+                    <img src="./img/noun_Paper_88662.png" alt="" class="paper" data-userInput="p">
+                </div>
+                <div class="choices">
+                    <img src="./img/noun_Scissors_88666.png" alt="" class="rock" data-userInput="s">
+                </div>
+                <div class="choices">
+                    <img src="./img/noun_rock_88661.png" alt="" class="scissors" data-userInput="r">
+                </div>
+             </div>
+            <div class="small-text">Make your move.</div>   
+        </div>
+        <div class="footer"></div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
